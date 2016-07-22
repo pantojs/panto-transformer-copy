@@ -29,7 +29,7 @@ class CopyTransformer extends Transformer {
                 }
             });
 
-        });;
+        });
     }
 
 }

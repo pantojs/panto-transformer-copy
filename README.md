@@ -6,10 +6,11 @@ Copy transformer for panto.
 ```js
 panto.loadTransformer('copy');
 
-panto.pick('**/*.js').copy();
+panto.pick('**/*.swf').copy({destDir: 'flash'});
 ```
 
 ## options
+ - destdir:String
 
 [npm-url]: https://npmjs.org/package/panto-transformer-copy
 [downloads-image]: http://img.shields.io/npm/dm/panto-transformer-copy.svg
