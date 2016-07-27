@@ -29,9 +29,8 @@ describe('panto-transformer-copy', () => {
             panto.build().then(() => {
                 assert.ok(fs.existsSync(__dirname + '/output/mock/test.js'));
             }).then(() => {
-                panto.file.rimraf('.');
-                done();
-            });
+                return panto.file.rimraf('.');
+            }).then(() => done()).catch(e => console.error(e));
         });
     });
 });
