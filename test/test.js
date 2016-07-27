@@ -6,7 +6,7 @@
  * 2016-07-22[14:09:12]:revised
  *
  * @author yanni4night@gmail.com
- * @version 0.1.0
+ * @version 0.1.1
  * @since 0.1.0
  */
 'use strict';
@@ -22,10 +22,12 @@ describe('panto-transformer-copy', () => {
                 cwd: __dirname
             });
 
-            panto.$('*.js').tag('js').pipe(new CopyTransformer());
+            panto.$('*.js').tag('js').pipe(new CopyTransformer({
+                destdir: 'mock'
+            }));
 
             panto.build().then(() => {
-                assert.ok(fs.existsSync(__dirname + '/output/test.js'));
+                assert.ok(fs.existsSync(__dirname + '/output/mock/test.js'));
             }).then(() => {
                 panto.file.rimraf('.', {
                     force: true
