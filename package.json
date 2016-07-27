@@ -6,6 +6,7 @@
   "scripts": {
     "test": "eslint index.js && mocha"
   },
+  "pre-commit": "test",
   "repository": {
     "type": "git",
     "url": "https://github.com/pantojs/panto-transformer-copy.git"
@@ -28,6 +29,7 @@
     "panto-transformer": "^0.2.2"
   },
   "devDependencies": {
-    "panto": "0.0.28"
+    "panto": "0.0.28",
+    "pre-commit": "^1.1.3"
   }
 }
