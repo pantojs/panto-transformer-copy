@@ -1,12 +1,12 @@
 # panto-transformer-copy
-[![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency status][david-dm-image]][david-dm-url] [![Dev Dependency status][david-dm-dev-image]][david-dm-dev-url]
+[![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency status][david-dm-image]][david-dm-url] [![Dev Dependency status][david-dm-dev-image]][david-dm-dev-url] [![Coverage Status][coveralls-image]][coveralls-url]
 
 Copy transformer for panto.
 
 ```js
 panto.loadTransformer('copy');
 
-panto.pick('**/*.swf').copy({destDir: 'flash'});
+panto.pick('**/*.swf').copy({destdir: 'flash'});
 ```
 
 ## options
@@ -21,3 +21,5 @@ panto.pick('**/*.swf').copy({destDir: 'flash'});
 [david-dm-image]:https://david-dm.org/pantojs/panto-transformer-copy.svg
 [david-dm-dev-url]:https://david-dm.org/pantojs/panto-transformer-copy#info=devDependencies
 [david-dm-dev-image]:https://david-dm.org/pantojs/panto-transformer-copy/dev-status.svg
+[coveralls-image]:https://coveralls.io/repos/github/pantojs/panto-transformer-copy/badge.svg?branch=master
+[coveralls-url]:https://coveralls.io/github/pantojs/panto-transformer-copy?branch=master
