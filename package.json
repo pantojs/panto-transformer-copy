@@ -1,6 +1,6 @@
 {
   "name": "panto-transformer-copy",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Copy transformer for panto",
   "main": "index.js",
   "scripts": {
