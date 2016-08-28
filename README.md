@@ -6,11 +6,12 @@ Copy transformer for panto.
 ```js
 panto.loadTransformer('copy');
 
-panto.pick('**/*.swf').copy({destdir: 'flash'});
+panto.$('**/*.swf').copy({destdir: 'flash', flatten: true});
 ```
 
 ## options
- - destdir:String
+ - destdir: String
+ - flatten: Boolean
 
 [npm-url]: https://npmjs.org/package/panto-transformer-copy
 [downloads-image]: http://img.shields.io/npm/dm/panto-transformer-copy.svg
@@ -19,7 +20,7 @@ panto.pick('**/*.swf').copy({destdir: 'flash'});
 [travis-image]: http://img.shields.io/travis/pantojs/panto-transformer-copy.svg
 [david-dm-url]:https://david-dm.org/pantojs/panto-transformer-copy
 [david-dm-image]:https://david-dm.org/pantojs/panto-transformer-copy.svg
-[david-dm-dev-url]:https://david-dm.org/pantojs/panto-transformer-copy#info=devDependencies
+[david-dm-dev-url]:https://david-dm.org/pantojs/panto-transformer-copy#type=dev
 [david-dm-dev-image]:https://david-dm.org/pantojs/panto-transformer-copy/dev-status.svg
 [coveralls-image]:https://coveralls.io/repos/github/pantojs/panto-transformer-copy/badge.svg?branch=master
 [coveralls-url]:https://coveralls.io/github/pantojs/panto-transformer-copy?branch=master
